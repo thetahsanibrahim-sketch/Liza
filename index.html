@@ -1,120 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday Mahfuza Akter Liza</title>
-  <!-- Link to External CSS -->
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Mahfuza Akter Liza ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <!-- Dynamic Theme Indicator Badge -->
-  <div class="theme-badge">
-    THEME: <span id="theme-name">Romantic Rose</span>
-  </div>
+<div id="particles"></div>
 
-  <div class="container">
+<!-- HERO -->
+<header class="hero">
 
-    <!-- Hero Section -->
-    <div class="hero-content">  
-      <div class="small-title">A Very Special Day • 24 August 2026</div>  
-      <h1>Happy<br>Birthday</h1>  
-      <h2 class="name">Mahfuza Akter Liza ❤️</h2>  
-      <p class="hero-text">  
-        Today isn't just another day... Today is the day someone truly special came into this beautiful world.  
-      </p>  
-      <a href="#story" class="btn">Open Your Surprise ✨</a>  
-    </div>  
+    <div class="hero-content">
 
-    <!-- Message Section -->
-    <div id="story">
-      <div class="section-title">  
-        <span>A LITTLE MESSAGE</span>  
-        <h2>For You, Liza</h2>  
-      </div>  
+        <div class="eyebrow">
+            24 • AUGUST • 2026
+        </div>
 
-      <div class="message-box">  
-        <p>  
-          “Some people make the world more beautiful simply by being in it. You are one of those rare people. May your smile always stay bright, your heart always stay happy, and every dream you've ever wished for slowly become reality.”  
-        </p>  
-        <div class="signature">With lots of love ❤️</div>  
-      </div>  
+        <!-- Alphabet Animation -->
+        <div class="alphabet" id="alphabet"></div>
+
+        <h1>
+            Happy Birthday
+        </h1>
+
+        <h2>
+            Mahfuza Akter Liza <span>♥</span>
+        </h2>
+
+        <p id="heroQuote">
+            A thousand languages, one birthday,
+            one beautiful soul.
+        </p>
+
+        <div class="hero-actions">
+
+            <button class="btn primary" id="enterBtn">
+                Enter The Celebration ✨
+            </button>
+
+            <button class="btn" id="musicBtn">
+                ♫ Music
+            </button>
+
+        </div>
+
     </div>
 
-    <!-- Countdown Section -->
-    <div class="section-title">  
-      <span>THE BIG DAY</span>  
-      <h2>Countdown</h2>  
-    </div>  
+    <div class="scroll">
+        SCROLL TO DISCOVER ↓
+    </div>
 
-    <div class="countdown">  
-      <div class="time-box">  
-        <strong id="days">00</strong>  
-        <span>DAYS</span>  
-      </div>  
-      <div class="time-box">  
-        <strong id="hours">00</strong>  
-        <span>HOURS</span>  
-      </div>  
-      <div class="time-box">  
-        <strong id="minutes">00</strong>  
-        <span>MINUTES</span>  
-      </div>  
+</header>
 
-      <div class="time-box">  
-        <strong id="seconds">00</strong>  
-        <span>SECONDS</span>  
-      </div>  
-    </div>  
 
-    <!-- Features Section -->
-    <div class="section-title">  
-      <span>WHY YOU ARE SPECIAL</span>  
-      <h2>Little Things</h2>  
-    </div>  
+<main>
 
-    <div class="cards">  
-      <div class="card">  
-        <div class="icon">✨</div>  
-        <h3>Your Smile</h3>  
-        <p>A smile that can make even an ordinary moment feel special.</p>  
-      </div>  
 
-      <div class="card">  
-        <div class="icon">🌸</div>  
-        <h3>Your Heart</h3>  
-        <p>Beautiful from the inside, kind, warm and genuinely precious.</p>  
-      </div>  
+<!-- SPECIAL QUOTE -->
 
-      <div class="card">  
-        <div class="icon">💫</div>  
-        <h3>Your Dreams</h3>  
-        <p>May every dream in your heart find its way into your beautiful future.</p>  
-      </div>  
+<section>
 
-      <div class="card">  
-        <div class="icon">❤️</div>  
-        <h3>You</h3>  
-        <p>Simply because you are you. And that's already more than enough.</p>  
-      </div>  
-    </div>  
+    <div class="section-title">
 
-    <!-- Footer Wish Section -->
-    <div style="margin-top: 60px;">  
-      <div class="small-title">24 • 08 • 2026</div>  
-      <h2>Happy Birthday<br><span style="color: var(--primary-color);">Liza ❤️</span></h2>  
-      <br>
-      <button class="btn" onclick="celebrate()">Make A Wish ✨</button>  
-    </div>  
+        <span>
+            SPECIAL BIRTHDAY QUOTE
+        </span>
 
-    <footer>
-      MADE WITH ❤️ FOR MAHFUZA AKTER LIZA
-    </footer>
+        <h2>
+            For Someone Rare
+        </h2>
 
-  </div>
+    </div>
 
-  <!-- Link to External JavaScript -->
-  <script src="script.js"></script>
+
+    <div class="quote-card">
+
+        <div class="quote-mark">
+            “
+        </div>
+
+        <p id="specialQuote"></p>
+
+        <div class="quote-author">
+            — A little birthday wish for Liza
+        </div>
+
+        <button class="mini-btn" id="newQuote">
+            Another Wish ↗
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- 1000 LANGUAGES -->
+
+<section>
+
+    <div class="section-title">
+
+        <span>
+            ONE WISH • A THOUSAND VOICES
+        </span>
+
+        <h2>
+            Happy Birthday
+            <br>
+            in 1000 Languages
+        </h2>
+
+    </div>
+
+
+    <div class="language-card">
+
+        <div class="language-counter">
+
+            <strong id="langNumber">
+                001
+            </strong>
+
+            <span>
+                / 1000
+            </span>
+
+        </div>
+
+
+        <div class="language-name" id="languageName">
+            English
+        </div>
+
+
+        <div class="birthday-word" id="birthdayWord">
+            Happy Birthday
+        </div>
+
+
+        <p id="languageNote">
+            One wish, spoken in a different language.
+        </p>
+
+
+        <div class="lang-actions">
+
+            <button class="mini-btn" id="prevLang">
+                ← Previous
+            </button>
+
+            <button class="mini-btn accent" id="nextLang">
+                Next Language →
+            </button>
+
+        </div>
+
+
+        <div class="progress">
+
+            <span id="langProgress"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- SPECIAL MESSAGE -->
+
+<section>
+
+    <div class="section-title">
+
+        <span>
+            THE HEART OF THIS PAGE
+        </span>
+
+        <h2>
+            A Message For You
+        </h2>
+
+    </div>
+
+
+    <div class="message-card">
+
+        <p>
+            Liza, today is more than a date on a calendar.
+            It is a reminder that the world became a little
+            more beautiful because you are in it.
+        </p>
+
+        <p>
+            May this new chapter bring you peaceful mornings,
+            genuine smiles, unexpected happiness and dreams
+            that finally find their way home.
+        </p>
+
+        <p>
+            Keep being the person who makes ordinary moments
+            feel special. Keep your heart soft, your hopes high
+            and your smile bright.
+        </p>
+
+        <div class="signature">
+            With endless good wishes, ❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- COUNTDOWN -->
+
+<section>
+
+    <div class="section-title">
+
+        <span>
+            THE BIG MOMENT
+        </span>
+
+        <h2>
+            Birthday Countdown
+        </h2>
+
+    </div>
+
+
+    <div class="countdown">
+
+        <div class="time-box">
+
+            <strong id="days">
+                00
+            </strong>
+
+            <span>
+                DAYS
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <strong id="hours">
+                00
+            </strong>
+
+            <span>
+                HOURS
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <strong id="minutes">
+                00
+            </strong>
+
+            <span>
+                MINUTES
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <strong id="seconds">
+                00
+            </strong>
+
+            <span>
+                SECONDS
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- SPECIAL THINGS -->
+
+<section>
+
+    <div class="section-title">
+
+        <span>
+            A FEW LITTLE REASONS
+        </span>
+
+        <h2>
+            Why You Are Special
+        </h2>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <article class="card">
+
+            <div class="icon">
+                ✨
+            </div>
+
+            <h3>
+                Your Smile
+            </h3>
+
+            <p>
+                Some smiles don't just appear on a face —
+                they brighten the whole moment.
+            </p>
+
+        </article>
+
+
+
+        <article class="card">
+
+            <div class="icon">
+                🌸
+            </div>
+
+            <h3>
+                Your Heart
+            </h3>
+
+            <p>
+                A gentle heart is rare.
+                Protect yours, because it is one
+                of your greatest gifts.
+            </p>
+
+        </article>
+
+
+
+        <article class="card">
+
+            <div class="icon">
+                🌙
+            </div>
+
+            <h3>
+                Your Presence
+            </h3>
+
+            <p>
+                Sometimes simply having someone around
+                makes an ordinary day feel different.
+            </p>
+
+        </article>
+
+
+
+        <article class="card">
+
+            <div class="icon">
+                💫
+            </div>
+
+            <h3>
+                Your Dreams
+            </h3>
+
+            <p>
+                May every beautiful dream you carry
+                become a beautiful memory one day.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- FINAL -->
+
+<section class="final">
+
+    <div>
+
+        <div class="eyebrow">
+            24 • 08 • 2026
+        </div>
+
+
+        <h2>
+
+            One Day.
+            <br>
+
+            <span>
+                One Wish.
+            </span>
+
+            <br>
+
+            One Liza. ♥
+
+        </h2>
+
+
+        <button class="btn primary" id="wishBtn">
+            Make A Wish ✨
+        </button>
+
+
+        <p class="final-note">
+            Every special button changes the atmosphere.
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+    MADE WITH ♥ FOR
+    MAHFUZA AKTER LIZA
+    • 2026
+
+</footer>
+
+
+
+<!-- MUSIC -->
+
+<audio id="music" loop>
+
+    <source
+        src="assets/birthday.mp3"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+
+
+<script src="js/app.js"></script>
+
 </body>
 </html>
